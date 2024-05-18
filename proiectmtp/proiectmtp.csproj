@@ -116,6 +116,9 @@
     <Compile Include="Autentificare.Designer.cs">
       <DependentUpon>Autentificare.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cautare.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inregistrare.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Autentificare.resx">
       <DependentUpon>Autentificare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cautare.resx">
+      <DependentUpon>Cautare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inregistrare.resx">
       <DependentUpon>Inregistrare.cs</DependentUpon>

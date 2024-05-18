@@ -86,6 +86,7 @@ namespace proiectmtp
             this.btnCautare.TabIndex = 8;
             this.btnCautare.Text = "Căutare ";
             this.btnCautare.UseVisualStyleBackColor = true;
+            this.btnCautare.Click += new System.EventHandler(this.btnCautare_Click);
             // 
             // btnStergere
             // 
@@ -130,6 +131,12 @@ namespace proiectmtp
         private void btnAdaugare_Click(object sender, EventArgs e)
         {
             Adaugare f = new Adaugare();
+            f.ShowDialog();
+        }
+       
+        private void btnCautare_Click(object sender, EventArgs e)
+        {
+            Cautare f = new Cautare();
             f.ShowDialog();
         }
     }

@@ -61,6 +61,7 @@ namespace proiectmtp
             this.btnAdaugare.TabIndex = 6;
             this.btnAdaugare.Text = "Adăugare Mașină";
             this.btnAdaugare.UseVisualStyleBackColor = false;
+            this.btnAdaugare.Click += new System.EventHandler(this.btnAdaugare_Click);
             // 
             // button1
             // 
@@ -123,6 +124,12 @@ namespace proiectmtp
         private void button1_Click(object sender, EventArgs e)
         {
             Afisare f = new Afisare();
+            f.ShowDialog();
+        }
+
+        private void btnAdaugare_Click(object sender, EventArgs e)
+        {
+            Adaugare f = new Adaugare();
             f.ShowDialog();
         }
     }

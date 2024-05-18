@@ -104,6 +104,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adaugare.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Afisare.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +124,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Adaugare.resx">
+      <DependentUpon>Adaugare.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Afisare.resx">
       <DependentUpon>Afisare.cs</DependentUpon>
     </EmbeddedResource>

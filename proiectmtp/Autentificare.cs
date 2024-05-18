@@ -99,5 +99,10 @@ namespace proiectmtp
         {
             Application.Exit();
         }
+
+        private void comboBoxutilizator_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

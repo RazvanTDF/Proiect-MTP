@@ -48,6 +48,7 @@
             this.comboBoxutilizator.Name = "comboBoxutilizator";
             this.comboBoxutilizator.Size = new System.Drawing.Size(216, 31);
             this.comboBoxutilizator.TabIndex = 1;
+            this.comboBoxutilizator.SelectedIndexChanged += new System.EventHandler(this.comboBoxutilizator_SelectedIndexChanged);
             // 
             // label1
             // 

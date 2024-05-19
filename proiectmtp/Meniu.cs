@@ -13,6 +13,7 @@ namespace proiectmtp
         private Button button1;
         private Button btnCautare;
         private Button btnStergere;
+        private Button button2;
         private Button btnAnulare;
 
         [System.Runtime.InteropServices.DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -36,6 +37,7 @@ namespace proiectmtp
             this.button1 = new System.Windows.Forms.Button();
             this.btnCautare = new System.Windows.Forms.Button();
             this.btnStergere = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAnulare
@@ -100,9 +102,22 @@ namespace proiectmtp
             this.btnStergere.UseVisualStyleBackColor = true;
             this.btnStergere.Click += new System.EventHandler(this.btnStergere_Click);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(435, 265);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(181, 86);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Modificare";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Meniu
             // 
             this.ClientSize = new System.Drawing.Size(1084, 501);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnStergere);
             this.Controls.Add(this.btnCautare);
             this.Controls.Add(this.button1);
@@ -126,7 +141,7 @@ namespace proiectmtp
         private void button1_Click(object sender, EventArgs e)
         {
             Afisare f = new Afisare();
-            f.ShowDialog();
+            f.Show(); //am modificat ca sa pot sa accesez cand vreau sa modific
         }
 
         private void btnAdaugare_Click(object sender, EventArgs e)
@@ -145,6 +160,12 @@ namespace proiectmtp
         {
             Stergere f = new Stergere();
             f.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Modificare f = new Modificare();
+            f.Show();
         }
     }
 }

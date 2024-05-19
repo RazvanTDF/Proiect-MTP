@@ -125,6 +125,9 @@
     <Compile Include="Meniu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modificare.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stergere.cs">
@@ -147,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Meniu.resx">
       <DependentUpon>Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificare.resx">
+      <DependentUpon>Modificare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

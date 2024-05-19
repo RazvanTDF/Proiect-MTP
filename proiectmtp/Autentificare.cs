@@ -70,28 +70,11 @@ namespace proiectmtp
 
         }
 
-        private void SetBackgroundImage()
-        {
-            // calea spre imagine
-            string imagePath = Path.Combine(Application.StartupPath, "Resources", "poza.jpg");
-
-            // Verificare
-            if (File.Exists(imagePath))
-            {
-                //setare imagine de fundal
-                this.BackgroundImage = Image.FromFile(imagePath);
-                this.BackgroundImageLayout = ImageLayout.Stretch; // Pot fi folosite si alte valori: None, Tile, Center, Zoom
-            }
-            else
-            {
-                MessageBox.Show("Imaginea de fundal nu a fost găsită.");
-            }
-        }
-
+ 
 
         private void Autentificare_Load(object sender, EventArgs e)
         {
-            SetBackgroundImage();
+          
             //button2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button2.Width, button2.Height, 100, 100));
         }
 

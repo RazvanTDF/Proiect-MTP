@@ -35,7 +35,7 @@ namespace proiectmtp
             // btnCautare
             // 
             btnCautare.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnCautare.Location = new System.Drawing.Point(115, 65);
+            btnCautare.Location = new System.Drawing.Point(933, 39);
             btnCautare.Margin = new System.Windows.Forms.Padding(4);
             btnCautare.Name = "btnCautare";
             btnCautare.Size = new System.Drawing.Size(208, 59);
@@ -48,7 +48,7 @@ namespace proiectmtp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 32);
+            this.label1.Location = new System.Drawing.Point(13, 54);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(461, 29);
@@ -58,10 +58,10 @@ namespace proiectmtp
             // txtCautat
             // 
             this.txtCautat.BackColor = System.Drawing.Color.LightGray;
-            this.txtCautat.Location = new System.Drawing.Point(497, 39);
+            this.txtCautat.Location = new System.Drawing.Point(482, 61);
             this.txtCautat.Margin = new System.Windows.Forms.Padding(4);
             this.txtCautat.Name = "txtCautat";
-            this.txtCautat.Size = new System.Drawing.Size(420, 22);
+            this.txtCautat.Size = new System.Drawing.Size(435, 22);
             this.txtCautat.TabIndex = 2;
             // 
             // button1

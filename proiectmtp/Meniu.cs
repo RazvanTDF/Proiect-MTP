@@ -98,6 +98,7 @@ namespace proiectmtp
             this.btnStergere.TabIndex = 9;
             this.btnStergere.Text = "Ștergere";
             this.btnStergere.UseVisualStyleBackColor = true;
+            this.btnStergere.Click += new System.EventHandler(this.btnStergere_Click);
             // 
             // Meniu
             // 
@@ -137,6 +138,12 @@ namespace proiectmtp
         private void btnCautare_Click(object sender, EventArgs e)
         {
             Cautare f = new Cautare();
+            f.ShowDialog();
+        }
+
+        private void btnStergere_Click(object sender, EventArgs e)
+        {
+            Stergere f = new Stergere();
             f.ShowDialog();
         }
     }

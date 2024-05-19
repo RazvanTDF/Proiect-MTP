@@ -127,6 +127,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stergere.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="Adaugare.resx">
       <DependentUpon>Adaugare.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +157,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Stergere.resx">
+      <DependentUpon>Stergere.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

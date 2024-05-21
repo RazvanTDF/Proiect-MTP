@@ -20,7 +20,7 @@ namespace proiectmtp
         public Inregistrare()
         {
             InitializeComponent();
-        }
+        } 
 
         private void InitializeComponent()
         {
@@ -114,17 +114,16 @@ namespace proiectmtp
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
+        } //componente
 
         private void Inregistrare_Load(object sender, EventArgs e)
         {
 
-        }
+        } //gol
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
+        } //close
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -163,7 +162,7 @@ namespace proiectmtp
             }
 
             MessageBox.Show("Înregistrare realizată cu succes!");
-        }
+        } //inregistrare buton
 
         private bool ValidareText(string text)
         {

@@ -8,11 +8,27 @@ namespace proiectmtp
 {
     public partial class Modificare : Form
     {
+        private Label labelMarca;
+        private TextBox txtMarca;
+        private Label labelModel;
+        private TextBox txtModel;
+        private Label labelAn;
+        private ComboBox comboBoxAn;
+        private Label labelPret;
+        private TextBox txtPret;
+        private Label labelCategorie;
+        private ComboBox comboBoxCategorie;
+        private Label labelCapMotor;
+        private TextBox txtCapMotor;
+        private Button btnCautare;
+        private DataGridView dataGridView1;
+        private Button button1;
+        private Button btnUpdate;
         public Modificare()
         {
             InitializeComponent();
             FillYearComboBox();
-        }
+        } //constructor
 
         private void FillYearComboBox()
         {
@@ -20,7 +36,7 @@ namespace proiectmtp
             {
                 comboBoxAn.Items.Add(year);
             }
-        }
+        } //initializare 
         private void InitializeComponent()
         {
             this.labelMarca = new System.Windows.Forms.Label();
@@ -210,6 +226,7 @@ namespace proiectmtp
             this.Controls.Add(this.labelMarca);
             this.Name = "Modificare";
             this.Text = "Formular de Actualizare";
+            this.Load += new System.EventHandler(this.Modificare_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -247,7 +264,7 @@ namespace proiectmtp
                     MessageBox.Show("A apărut o eroare: " + ex.Message);
                 }
             }
-        }
+        } //cautare ->an model marca pret
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -290,7 +307,7 @@ namespace proiectmtp
                     MessageBox.Show("A apărut o eroare: " + ex.Message);
                 }
             }
-        }
+        } //actualizare
 
         private bool ValidateInputs()
         {
@@ -331,28 +348,16 @@ namespace proiectmtp
             }
 
             return true;
-        }
-
-        private Label labelMarca;
-        private TextBox txtMarca;
-        private Label labelModel;
-        private TextBox txtModel;
-        private Label labelAn;
-        private ComboBox comboBoxAn;
-        private Label labelPret;
-        private TextBox txtPret;
-        private Label labelCategorie;
-        private ComboBox comboBoxCategorie;
-        private Label labelCapMotor;
-        private TextBox txtCapMotor;
-        private Button btnCautare;
-        private DataGridView dataGridView1;
-        private Button button1;
-        private Button btnUpdate;
+        } //validari clasice
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        } //anulare
+
+        private void Modificare_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

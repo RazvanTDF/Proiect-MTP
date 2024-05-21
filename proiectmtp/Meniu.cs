@@ -16,19 +16,16 @@ namespace proiectmtp
         private Button button2;
         private Button btnAnulare;
 
-        [System.Runtime.InteropServices.DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn(int nLeft, int nTop, int nRtight, int nBottom, int nWidtEllipse, int nHeightEllipse);
-
         public Meniu()
         {
             InitializeComponent();
-        }
+        } //constructor
         
 
         private void Meniu_Load(object sender, EventArgs e)
         {
 
-        }
+        } //gol
 
         private void InitializeComponent()
         {
@@ -132,7 +129,7 @@ namespace proiectmtp
         private void Meniu_Load_1(object sender, EventArgs e)
         {
 
-        }
+        } //gol
         private void btnAnulare_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -142,7 +139,7 @@ namespace proiectmtp
         {
             Afisare f = new Afisare();
             f.Show(); //am modificat ca sa pot sa accesez cand vreau sa modific
-        }
+        } //redirectionare afisare
 
         private void btnAdaugare_Click(object sender, EventArgs e)
         {
@@ -166,6 +163,6 @@ namespace proiectmtp
         {
             Modificare f = new Modificare();
             f.Show();
-        }
+        }//modificare
     }
 }

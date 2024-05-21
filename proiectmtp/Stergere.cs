@@ -22,7 +22,7 @@ namespace proiectmtp
         {
             InitializeComponent();
          
-        }
+        } //construct
 
         private void InitializeComponent()
         {
@@ -121,7 +121,7 @@ namespace proiectmtp
         private void Stergere_Load(object sender, EventArgs e)
         {
 
-        }
+        } //gol
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -154,15 +154,15 @@ namespace proiectmtp
                 }
             //intentionam sa adaug un modificator pentru resetarea autoincrementului dar nu am reusit
 
-        }
+        } //stergere button
         private void button2_Click_1(object sender, EventArgs e)
         {
             Afisare formAfisare = new Afisare();
             formAfisare.Show();
-        }
+        } //confirmare afisare button
         private void btnInapoi_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+        }  //anulare
     }
 }

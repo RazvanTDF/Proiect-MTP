@@ -15,10 +15,6 @@ namespace proiectmtp
 {
     public partial class Autentificare : Form
     {
-        [System.Runtime.InteropServices.DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-
-        private static extern IntPtr CreateRoundRectRgn(int nLeft, int nTop, int nRtight, int nBottom, int nWidtEllipse, int nHeightEllipse);
-
         public Autentificare()
         {
             InitializeComponent();
@@ -28,7 +24,7 @@ namespace proiectmtp
                 string[] inregistrare = line.Split(',');
                 comboBoxutilizator.Items.Add(inregistrare[0]);
             }
-        }
+        }//constructor
 
         private int incercari = 0;
 
@@ -46,7 +42,6 @@ namespace proiectmtp
                         Meniu f = new Meniu();
                         f.ShowDialog();
                         this.Close();
-
                     }
                     else
                     {
@@ -62,30 +57,27 @@ namespace proiectmtp
                 }
             }
 
-        }
+        } //autentificare
         private void button3_Click(object sender, EventArgs e) 
         {
             Inregistrare f = new Inregistrare();
             f.ShowDialog();
 
-        }
-
- 
+        } //redirectionare inregistrare
 
         private void Autentificare_Load(object sender, EventArgs e)
         {
-          
-            //button2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button2.Width, button2.Height, 100, 100));
-        }
+
+        } //gol
 
         private void btnAnulare_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
+        } //exit
 
         private void comboBoxutilizator_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }
+        } //gol
     }
 }

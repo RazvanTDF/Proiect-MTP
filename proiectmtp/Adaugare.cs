@@ -241,11 +241,11 @@ namespace proiectmtp
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+        } //anulare
         private void Adaugare_Load(object sender, EventArgs e)
         {
 
-        }
+        } //gol
         private void btnSalvare_Click(object sender, EventArgs e)
         {
             if (!ValidateInputs())

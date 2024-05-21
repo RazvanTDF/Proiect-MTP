@@ -19,7 +19,7 @@ namespace proiectmtp
         public Cautare()
         {
             InitializeComponent();
-        }
+        } //constructor
 
         private void InitializeComponent()
         {
@@ -105,12 +105,12 @@ namespace proiectmtp
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+        }  //anulare
 
         private void Cautare_Load(object sender, EventArgs e)
         {
       
-        }
+        } //gol
         private void btnCautare_Click(object sender, EventArgs e)
         {
             string connect = "Server=127.0.0.1;Port=3306;Database=mtp;User=root;Password=root;SslMode=Preferred;";
@@ -137,7 +137,6 @@ namespace proiectmtp
                     MessageBox.Show("A apărut o eroare: " + ex.Message);
                 }
             }
-        }
-
+        } //buton cautare
     }
 }
